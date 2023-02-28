@@ -30,7 +30,7 @@ sm:shadow-md rounded-lg sm:border
           alt="image is not available"
         ></Image>
         <div className="p-2">
-          <p className="line-clamp-2 text-md">{result.overview}</p>
+   
           <h2 className="truncate text-lg font-bold">
             {result.title || result.name}
           </h2>

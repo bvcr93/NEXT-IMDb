@@ -1,6 +1,7 @@
 
 import Header from './components/Header'
 import Nav from './components/Nav'
+import SearchField from './components/SearchField'
 import './globals.css'
 import Providers from './Providers'
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <Providers>
         <Header/>
         <Nav/>
+        <SearchField/>
         {children}
         </Providers>
         </body>
