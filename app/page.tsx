@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import styles from './page.module.css'
 import Results from './components/Results'
 
-//THIS IS SERVER COMP
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +15,7 @@ export default async function Home({ searchParams }: any) {
   const genre = searchParams.genre || "fetchTrending"
   const res = await fetch(
     `https://api.themoviedb.org/3/${genre === "fetchTopRated" ? "movie/top_rated" : "trending/all/week"
-    }?api_key=${API_KEY}&language=en-US&page=1`,
+    }?api_key=${API_KEY}`,
     { next: { revalidate: 60 } }
   );
   if (!res.ok) {
@@ -26,8 +26,6 @@ export default async function Home({ searchParams }: any) {
 
 
   const results = data.results;
-
-  console.log(results);
 
   return (
     <div className='flex '>
