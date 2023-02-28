@@ -11,9 +11,9 @@ const MenuItem = ({title, address, Icon}: Props) => {
   return (
     <div className=''>
        
-       <Link href={address} className="mx-4 lg:mx-6 hover:text-amber-500">
-        <Icon className="sm:hidden mx-4 text-4xl text-stone-700 " sx = {{fontSize: "25px"}}/>
-       <p className=' hidden sm:inline my-2 text-sm'>{title}</p>
+       <Link href={address} className="mx-4 lg:mx-6  hover:text-amber-500">
+        <Icon className="sm:hidden mx-4 text-4xl  " sx = {{fontSize: "25px"}}/>
+       <p className=' hidden sm:inline my-2 text-md'>{title}</p>
        </Link>
     </div>
   )
