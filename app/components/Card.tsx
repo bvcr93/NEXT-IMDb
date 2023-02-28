@@ -25,8 +25,8 @@ sm:shadow-md rounded-lg sm:border
             maxWidth: "100%",
             height: "auto",
           }}
-          placeholder="blur"
-          blurDataURL="/spinner.svg"
+     
+     
           alt="image is not available"
         ></Image>
         <div className="p-2">

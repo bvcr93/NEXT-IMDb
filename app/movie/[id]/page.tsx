@@ -32,8 +32,8 @@ const MovieDetails = async ({ params: { id } }: Props) => {
             maxWidth: "100%",
             height: "100%",
           }}
-          placeholder="blur"
-          blurDataURL="/spinner.svg"
+     
+   
           alt="Movie poster"
         ></Image>
         <div className="p-2">
